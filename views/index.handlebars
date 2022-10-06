@@ -1,0 +1,160 @@
+<head>
+<meta charset="UTF-8">
+    <title>Site do projeto integrador</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+</head>
+
+<nav class="nav">
+    <h1 class="nav__logo">Projeto Integrador</h1>
+    <ul class="nav__itens">
+        <li class="nav__item">
+             <a href="#" class="nav__link">Início</a>
+        </li>
+        <li class="nav__item">
+            <a href="#" class="nav__link">Tópicos</a>
+        </li>
+        <li class="nav__item">
+            <a href="#" class="nav__link">Sobre</a>
+        </li>
+        <li class="nav__item">
+            <a href="#" class="nav__link">Contato</a>
+        </li>
+        <li class="nav__item">
+            <button class="nav__botao">
+                <span class="material-symbols-outlined">search</span>
+            </button>
+        </li>
+    </ul>
+    <div class="nav__pesquisa">
+        <input type="text" class="nav__barra-pesquisa" />
+        <a href="#" class="nav__pesquisar">Pesquisar</a>
+    </div>
+</nav>
+<div class="hero">
+    <h1 class="hero__titulo">Matrizes Energéticas Brasileiras</h1>
+    <h2 class="hero__subtitulo">
+        Um subtitulo que fale sobre o que o site é e qual serviço ele dá ao usuário, slogan.
+    </h2>
+</div>
+<div class="topicos">
+    <div class="topicos__texto">
+        <h2 class="topicos__titulo reveal">Tópicos</h2>
+        <p class="topicos__paragrafo reveal">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ex. Dolor sit amet consectetur adipisicing elit.
+        </p>
+    </div>
+    <div class="topicos__grade">
+        <div class="topico topico--span-dois reveal">
+            <h3 class="topico__titulo reveal">Energias Renováveis</h3>
+        </div>
+        <div class="topico reveal">
+            <h3 class="topico__titulo reveal">Gás Natural</h3>
+        </div>
+        <div class="topico reveal">
+            <h3 class="topico__titulo reveal">Hidrelétrica</h3>
+        </div>
+        <div class="topico reveal">
+            <h3 class="topico__titulo reveal">Petróleo</h3>
+        </div>
+        <div class="topico reveal">
+            <h3 class="topico__titulo reveal">Termelétrica</h3>
+        </div>
+    </div>
+</div>
+<div class="noticias reveal">
+    <div class="noticia reveal">
+        <img
+            class="noticia__imagem"
+            src="american-public-power-association-eIBTh5DXW9w-unsplash.jpg"
+            alt="Imagem de notícia"
+        />
+        <div class="noticia__informacoes">
+            <h3 class="noticia__titulo">
+                Titulo da notícia loremm ipsum dolor sit dolor sit amet
+            </h3>
+            <p class="noticia__data">Data: 01 de jul. de 2022</p>
+        </div>
+    </div>
+    <div class="noticia reveal">
+        <img
+            class="noticia__imagem"
+            src="american-public-power-association-eIBTh5DXW9w-unsplash.jpg"
+            alt="Imagem de notícia"
+        />
+        <div class="noticia__informacoes">
+            <h3 class="noticia__titulo">
+                Titulo da notícia loremm ipsum dolor sit dolor sit amet
+            </h3>
+            <p class="noticia__data">Data: 01 de jul. de 2022</p>
+        </div>
+    </div>
+    <div class="noticia reveal">
+        <img
+            class="noticia__imagem"
+            src="american-public-power-association-eIBTh5DXW9w-unsplash.jpg"
+            alt="Imagem de notícia"
+        />
+        <div class="noticia__informacoes">
+            <h3 class="noticia__titulo">
+                Titulo da notícia loremm ipsum dolor sit dolor sit amet
+            </h3>
+            <p class="noticia__data">Data: 01 de jul. de 2022</p>
+        </div>
+    </div>
+    <a href="#" class="noticias__link"><span class="reveal">Ir para Notícias</span> <span>></span></a>
+</div>
+<div class="sobre">
+    <div class="sobre__texto">
+        <h2 class="sobre__titulo reveal">Sobre Nós</h2>
+        <p class="sobre__paragrafo reveal">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis officia alias
+            mollitia rem dolores? Voluptatem recusandae totam amet voluptatibus iure
+            praesentium facere quam maxime dolor. Quidem aspernatur assumenda provident
+            excepturi.
+        </p>
+    </div>
+    <img
+        src="nasa-_SFJhRPzJHs-unsplash.jpg"
+        alt="Imagem (descricao aqui)"
+        class="sobre__imagem reveal"
+    />
+</div>
+<footer class="rodape reveal">
+    <ul class="rodape__coluna">
+        <form action="/" method="post">
+            <h3 class="rodape__subtitulo">Quer deixar alguma sugestão?</h3>
+            <li class="rodape__item">
+                <input id="nome_campo" required type="text" placeholder="Nome" name="nome"/>
+            </li>
+            <li class="rodape__item">
+                <input id="email_campo" required type="text" placeholder="E-mail" name="email"/>
+            </li>
+            <li class="rodape__item">
+                <input id="sugestao_campo" required type="text" placeholder="Seu comentário" name="sugest_usr"/>
+            </li>
+            <li class="rodape__item">
+                <button onclick="validar()" type="submit" class="rodape__botao">Enviar</button>
+            </li>
+        </form>
+    </ul>
+    <p class="rodape__copyright">Projeto Integrador © Copyright 2022</p>
+    <ul class="rodape__links">
+        <h3 class="rodape__subtitulo">Projeto Integrador</h3>
+        <li class="rodape__item">
+            <a href="#" class="rodape__link">Página um</a>
+        </li>
+        <li class="rodape__item">
+            <a href="#" class="rodape__link">Página dois</a>
+        </li>
+        <li class="rodape__item">
+            <a href="#" class="rodape__link">Página três</a>
+        </li>
+    </ul>
+</footer>
+<script src="reveal.js"></script>
+<script src="script.js"></script>
+<script src="valid.js"></script>

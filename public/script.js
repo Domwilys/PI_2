@@ -1,11 +1,3 @@
-var campoNome = document.getElementById("nome_campo").values;
-var campoEmail = document.getElementById("nome_email").values;
-var campoSugest = document.getElementById("sugestao_campo").values;
-
-if(campoNome == "" || campoNome == " ") {
-    console.log("Validação feita");
-}
-
 window.addEventListener('DOMContentLoaded', function () {
     const navPesquisaBotao = document.querySelector('.nav__botao')
 

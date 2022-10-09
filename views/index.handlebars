@@ -30,8 +30,20 @@
         </li>
     </ul>
     <div class="nav__pesquisa">
-        <input type="text" class="nav__barra-pesquisa" />
-        <a href="#" class="nav__pesquisar">Pesquisar</a>
+        <form class="pesquisa">
+            <input type="text" class="nav__barra-pesquisa" id="searchbar" onkeyup="search_topic()"/>
+                
+            <ol id='list'>
+                <a href="#"><li class="topic">Petróleo</li></a>
+                <a href="#"><li class="topic">Energias Renováveis</li></a>
+                <a href="#"><li class="topic">Hidrelétrica</li></a>
+                <a href="#"><li class="topic">Termelétrica</li></a>
+                <a href="#"><li class="topic">Gás Natural</li></a>
+                <a href="#"><li class="topic">Título da notícia 1</li></a>
+                <a href="#"><li class="topic">Título da notícia 2</li></a>
+                <a href="#"><li class="topic">Título da notícia 3</li></a>
+            </ol>
+        </form>
     </div>
 </nav>
 <div class="hero">
@@ -137,7 +149,7 @@
                 <input id="sugestao_campo" required type="text" placeholder="Seu comentário" name="sugest_usr"/>
             </li>
             <li class="rodape__item">
-                <button onclick="validar()" type="submit" class="rodape__botao">Enviar</button>
+                <button type="submit" class="rodape__botao">Enviar</button>
             </li>
         </form>
     </ul>
@@ -158,3 +170,4 @@
 <script src="reveal.js"></script>
 <script src="script.js"></script>
 <script src="valid.js"></script>
+<script src="search.js"></script>

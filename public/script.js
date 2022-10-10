@@ -2,12 +2,15 @@ window.addEventListener('DOMContentLoaded', function () {
     const navPesquisaBotao = document.querySelector('.nav__botao')
 
     const nav = document.querySelector('.nav')
+    const logo = document.getElementById("logo_site");
 
     window.addEventListener('scroll', function () {
         if (!window.scrollY) {
             nav.classList.remove('nav--scrolled')
+            logo.src = "logo_nav_branco.png"
         } else {
             nav.classList.add('nav--scrolled')
+            logo.src = "logo_preto.png"
         }
     })
 

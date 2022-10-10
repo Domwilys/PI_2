@@ -103,9 +103,11 @@ body, html {
 	color: black;
 }
 
-.nav__logo {
-	max-width: 5ch;
-	font-weight: 500;
+#logo_site {
+	margin-top: -20px;
+	margin-left: -20px;
+	width: 100%;
+	max-width: 200px;
 }
 
 .nav__itens {

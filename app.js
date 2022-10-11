@@ -17,6 +17,12 @@ app.get("/", function(req, res){
     res.render('index');
 });
 
+app.get("/sugestoes", function(req, res){
+    Sugest.findAll().then(function(post){
+        res.render('sugestoes', {posts: post});
+    });
+});
+
 app.post("/", function(req, res){
     if(req.body.nome != null && req.body.email != null && req.body.sugest_usr != null){
         Sugest.create({

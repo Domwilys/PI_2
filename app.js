@@ -7,7 +7,14 @@ const Sugest = require('./models/Sugest');
 app.use(express.static('public'));
 app.use(express.static('imagens'));
 
-app.engine('handlebars', handlebars.engine({defaultLayout: 'main'}));
+app.engine('handlebars', handlebars.engine({
+    defaultLayout: 'main',
+    runtimeOptions: {
+        allowProtoPropertiesByDefault: true,
+
+        allowProtoMethodsByDefault: true,
+    }
+}));
 app.set('view engine', 'handlebars');
 
 app.use(bodyParser.urlencoded({extended: false}));
@@ -18,8 +25,8 @@ app.get("/", function(req, res){
 });
 
 app.get("/sugestoes", function(req, res){
-    Sugest.findAll().then(function(post){
-        res.render('sugestoes', {posts: post});
+    Sugest.findAll().then(function(posts){
+        res.render('sugestoes', {posts: posts});
     });
 });
 

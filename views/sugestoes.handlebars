@@ -3,5 +3,9 @@
 <h1>Lista de Sugestões:</h1>
 
 {{#each posts}}
-    <h1>{{nome}}</h1>
+    <small>{{createdAt}}</small>
+    <h3>{{nome}}</h3>
+    <h3>{{email}}</h3>
+    <p>{{sugestao}}</p>
+    <hr>
 {{/each}}

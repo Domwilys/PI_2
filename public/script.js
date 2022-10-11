@@ -8,9 +8,11 @@ window.addEventListener('DOMContentLoaded', function () {
         if (!window.scrollY) {
             nav.classList.remove('nav--scrolled')
             logo.src = "logo_nav_branco.png"
+            logo.style.marginTop = "-25px"
         } else {
             nav.classList.add('nav--scrolled')
             logo.src = "logo_preto.png"
+            logo.style.marginTop = "25px"
         }
     })
 

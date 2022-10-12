@@ -84,6 +84,7 @@ body, html {
 .nav--scrolled {
 	background-color: white;
 	padding-block: .5rem;
+	height: 100px;
 	align-items: center;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
@@ -94,20 +95,14 @@ body, html {
 }
 
 .nav--scrolled .nav__itens {
-	align-items: center;
-}
-
-.nav--scrolled .nav__logo  {
-	line-height: 1.5rem;
-	font-weight: 600;
-	color: black;
+	margin-top: -25px;
 }
 
 #logo_site {
-	margin-top: -20px;
+	margin-top: -25px;
 	margin-left: -20px;
 	width: 100%;
-	max-width: 200px;
+	max-width: 170px;
 }
 
 .nav__itens {
@@ -133,7 +128,6 @@ body, html {
 	display: none;
 	align-items: flex-end;	
 	justify-content: center;
-	padding-top: 2rem;
 }
 
 .nav__barra-pesquisa {

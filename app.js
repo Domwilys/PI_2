@@ -45,6 +45,6 @@ app.post("/", function(req, res){
     }
 });
 
-app.listen("8080", function(){
+app.listen("8080", '10.0.17.143', function(){
     console.log("Servidor rodando em http://localhost:8080");
 }); //Está sempre tem que ser a última linha do código de um projeto com express

@@ -38,13 +38,13 @@ app.post("/", function(req, res){
             sugestao: req.body.sugest_usr
         }).then(function(){
             console.log("Dados do usuário recebidos com sucesso!");
-            res.redirect('/');
+            //res.redirect('/');
         }).catch(function(erro){
             console.log("Erro ao receber dados do usuário! Erro:" + erro);
         });
     }
 });
 
-app.listen("8080", '10.0.17.143', function(){
+app.listen("8080", function(){
     console.log("Servidor rodando em http://localhost:8080");
 }); //Está sempre tem que ser a última linha do código de um projeto com express

@@ -13,10 +13,13 @@ function submit_suggest_form(e) {
             email: document.getElementById("email_campo").value,
             sugest_usr: document.getElementById("sugestao_campo").value
         })    
-    }).then((response) => {
-        console.log(response.text())
-    });
-   return false;
+    })
+    document.getElementById("nome_campo").value = '';
+    document.getElementById("email_campo").value = '';
+    document.getElementById("sugestao_campo").value = '';
+    alert("Sugestão enviada com sucesso!");
+    
+    return false;
 }
 
 form.addEventListener('submit', submit_suggest_form);

@@ -38,7 +38,6 @@ app.post("/", function(req, res){
             sugestao: req.body.sugest_usr
         }).then(function(){
             console.log("Dados do usuário recebidos com sucesso!");
-            //res.redirect('/');
         }).catch(function(erro){
             console.log("Erro ao receber dados do usuário! Erro:" + erro);
         });

@@ -3,6 +3,7 @@ const app = express();//Armazena o "express" em uma variável
 const handlebars = require('express-handlebars');//Insere o "handlebars" no código
 const bodyParser = require('body-parser');//Insere o "bodyParser" no código
 const Sugest = require('./models/Sugest');//Armazena as tabelas do banco de dados criadas no arquivo "Sugest.js"
+const ip = require("ip");
 
 app.use(express.static('public'));//Deixa a pasta "public" pública 
 app.use(express.static('imagens'));//Deixa a pasta de imagens pública
@@ -28,9 +29,14 @@ app.get("/", function(req, res){
 
 //Cria a rota da lista de sugestões, renderiza o arquivo "sugestões.handlebars" e cria um objeto que armazena os valores que o usuário envia para oo banco de dados
 app.get("/sugestoes", function(req, res){
-    Sugest.findAll().then(function(posts){
-        res.render('sugestoes', {posts: posts});
-    });
+    console.log(req.connection.remoteAddress)
+    if(req.connection.remoteAddress == ip.address()){
+        Sugest.findAll().then(function(posts){
+            res.render('sugestoes', {posts: posts});
+        });
+    } else {
+        res.redirect('/');
+    }
 });
 
 //Armazena os dados que vão ser cadastrados pelo usuário em objetos, e os envia para o banco de dados através da rota principal. Também foi feita uma verificação para que o preenchimento do formulário seja obrigatório
@@ -49,6 +55,6 @@ app.post("/", function(req, res){
 });
 
 //Roda toda a aplicação na rede local usando a porta "8080"
-app.listen("8080", function(){
+app.listen("8080", '10.0.17.143', function(){
     console.log("Servidor rodando em http://localhost:8080");
 }); //Está sempre tem que ser a última linha do código de um projeto com express

@@ -54,7 +54,7 @@ app.post("/", function(req, res){
 });
 
 function petroleoRota() {
-    app.get('/petroleo', function(req, res) {
+    app.get('/petroleo', function(req, res){
         res.render('petroleo');
     })
 }

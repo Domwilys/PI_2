@@ -29,7 +29,6 @@ app.get("/", function(req, res){
 
 //Cria a rota da lista de sugestões, renderiza o arquivo "sugestões.handlebars" e cria um objeto que armazena os valores que o usuário envia para oo banco de dados
 app.get("/sugestoes", function(req, res){
-    console.log(req.connection.remoteAddress)
     if(req.connection.remoteAddress == ip.address()){
         Sugest.findAll().then(function(posts){
             res.render('sugestoes', {posts: posts});
@@ -53,6 +52,14 @@ app.post("/", function(req, res){
         });
     }
 });
+
+function petroleoRota() {
+    app.get('/petroleo', function(req, res) {
+        res.render('petroleo');
+    })
+}
+
+petroleoRota();
 
 //Roda toda a aplicação na rede local usando a porta "8080"
 app.listen("8080", '10.0.17.143', function(){

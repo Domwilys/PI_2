@@ -9,19 +9,19 @@
 </head>
 
 <nav class="nav">
-    <a href="#"><img src="logo_nav_branco.png" id="logo_site"></a>
+    <a href="/"><img src="logo_nav_branco.png" id="logo_site"></a>
     <ul class="nav__itens">
         <li class="nav__item">
-             <a href="#" class="nav__link">Início</a>
+             <a href="/" class="nav__link">Início</a>
         </li>
         <li class="nav__item">
-            <a href="#" class="nav__link">Tópicos</a>
+            <a href="#" onclick="topicoRedirect(event)" class="nav__link">Tópicos</a>
         </li>
         <li class="nav__item">
-            <a href="#" class="nav__link">Sobre</a>
+            <a href="#" onclick="sobreRedirect(event)" class="nav__link">Sobre</a>
         </li>
         <li class="nav__item">
-            <a href="#" class="nav__link">Contato</a>
+            <a href="#" onclick="contatoRedirect(event)" id="contato" class="nav__link">Contato</a>
         </li>
         <li class="nav__item">
             <button class="nav__botao">
@@ -173,3 +173,4 @@
 <script src="valid.js"></script>
 <script src="search.js"></script>
 <script src="sendform.js"></script>
+<script src="goToElement.js"></script>

@@ -321,6 +321,20 @@ body, html {
 	font-weight: 300;
 }
 
+.noticia_2 {
+	margin-inline: 2rem;
+	display: flex;
+	flex-direction: column;
+	margin-top: -30px; 
+}
+
+.noticia_3 {
+	margin-inline: 2rem;
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px; 
+}
+
 .sobre {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);

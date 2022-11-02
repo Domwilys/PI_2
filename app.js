@@ -30,13 +30,21 @@ app.get("/", function(req, res){
 //Cria a rota da lista de sugestões, renderiza o arquivo "sugestões.handlebars" e cria um objeto que armazena os valores que o usuário envia para oo banco de dados
 app.get("/sugestoes", function(req, res){
     if(req.connection.remoteAddress == ip.address()){
-        Sugest.findAll().then(function(posts){
+        Sugest.findAll({order: [['id', 'Desc']]}).then(function(posts){
             res.render('sugestoes', {posts: posts});
         });
     } else {
         res.redirect('/');
     }
 });
+
+app.get("/deletar/:id", function(req, res) {
+    Sugest.destroy({where: {'id': req.params.id}}).then(function(){
+        res.redirect('/sugestoes')
+    }).catch(function(erro){
+        res.send("Erro: " + erro);
+    })
+})
 
 //Armazena os dados que vão ser cadastrados pelo usuário em objetos, e os envia para o banco de dados através da rota principal. Também foi feita uma verificação para que o preenchimento do formulário seja obrigatório
 app.post("/", function(req, res){

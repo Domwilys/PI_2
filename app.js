@@ -4,9 +4,6 @@ const handlebars = require('express-handlebars');//Insere o "handlebars" no cód
 const bodyParser = require('body-parser');//Insere o "bodyParser" no código
 const Sugest = require('./models/Sugest');//Armazena as tabelas do banco de dados criadas no arquivo "Sugest.js"
 const ip = require("ip");
-const jsdom = require("jsdom");
-const { JSDOM } = jsdom;
-const dom = new JSDOM(`<!DOCTYPE html>`);
 
 app.use(express.static('public'));//Deixa a pasta "public" pública 
 app.use(express.static('imagens'));//Deixa a pasta de imagens pública

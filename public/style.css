@@ -296,6 +296,11 @@ body, html {
 	margin-inline: 2rem;
 	display: flex;
 	flex-direction: column;
+	margin-top: -10px;
+}
+
+.noticia img {
+	height: 200px;
 }
 
 .noticia__imagem {
@@ -325,14 +330,22 @@ body, html {
 	margin-inline: 2rem;
 	display: flex;
 	flex-direction: column;
-	margin-top: -30px; 
+	margin-top: -40px; 
+}
+
+.noticia_2 img {
+	height: 200px;
 }
 
 .noticia_3 {
 	margin-inline: 2rem;
 	display: flex;
 	flex-direction: column;
-	margin-top: 30px; 
+	margin-top: 25px; 
+}
+
+.noticia_3 img {
+	height: 200px;
 }
 
 .sobre {

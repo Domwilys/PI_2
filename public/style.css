@@ -162,7 +162,7 @@ body, html {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-image: url('background.png');
+	background-image: url('background.webp');
 	background-size:cover;
 	box-shadow: inset 100vw 100vh rgba(0, 0, 0, 0.55);
 	color: white;
@@ -227,23 +227,23 @@ body, html {
 }
 
 .topico:nth-child(1) {
-	background-image: url('american-public-power-association-eIBTh5DXW9w-unsplash.jpg');
+	background-image: url('american-public-power-association-eIBTh5DXW9w-unsplash.webp');
 }
 
 .topico:nth-child(2) {
-	background-image: url('fre-sonneveld-q6n8nIrDQHE-unsplash.jpg');
+	background-image: url('fre-sonneveld-q6n8nIrDQHE-unsplash.webp');
 }
 
 .topico:nth-child(3) {
-	background-image: url('tejj-o8iXJVAahUc-unsplash.jpg');
+	background-image: url('tejj-o8iXJVAahUc-unsplash.webp');
 }
 
 .topico:nth-child(4) {
-	background-image: url('maria-lupan-hy97yy3e03A-unsplash.jpg');
+	background-image: url('maria-lupan-hy97yy3e03A-unsplash.webp');
 }
 
 .topico:nth-child(5) {
-	background-image: url('valeriy-kryukov-zc9__sCp1sc-unsplash.jpg');
+	background-image: url('valeriy-kryukov-zc9__sCp1sc-unsplash.webp');
 }
 
 .topico:hover {

@@ -7,11 +7,11 @@ window.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', function () {
         if (!window.scrollY) {
             nav.classList.remove('nav--scrolled')
-            logo.src = "logo_nav_branco.png"
+            logo.src = "logo_nav_branco.webp"
             logo.style.marginTop = "-20px"
         } else {
             nav.classList.add('nav--scrolled')
-            logo.src = "logo_preto.png"
+            logo.src = "logo_preto.webp"
             logo.style.marginTop = "-5px"
         }
     })

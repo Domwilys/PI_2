@@ -110,3 +110,22 @@ function noticiasRedirectTerm(event) {
 
 //Petróleo
 
+function contatoRedirectPetro(event) {
+    event.preventDefault();
+    window.scroll(0, 6000);
+}
+
+function topicoRedirectPetro(event) {
+    event.preventDefault();
+    window.scroll(0, 2800);
+}
+
+function sobreRedirectPetro(event) {
+    event.preventDefault();
+    window.scroll(0, 3900);
+}
+
+function noticiasRedirectPetro(event) {
+    event.preventDefault();
+    window.scroll(0, 3300);
+}

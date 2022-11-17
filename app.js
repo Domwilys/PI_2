@@ -87,6 +87,20 @@ app.get('/hidreletricas', function(req, res){
     res.render('hidreletricas');
 })
 
+app.post("/hidreletricas", function(req, res){
+    if(req.body.nome != null && req.body.email != null && req.body.sugest_usr != null){
+        Sugest.create({
+            nome: req.body.nome,
+            email: req.body.email,
+            sugestao: req.body.sugest_usr
+        }).then(function(){
+            console.log("Dados do usuário recebidos com sucesso!");
+        }).catch(function(erro){
+            console.log("Erro ao receber dados do usuário! Erro:" + erro);
+        });
+    }
+});
+
 app.get('/termeletrica', function(req, res){
     res.render('termeletrica');
 })

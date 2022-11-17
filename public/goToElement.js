@@ -29,15 +29,37 @@ function contatoRedirectEr(event) {
 
 function topicoRedirectEr(event) {
     event.preventDefault();
-    window.scroll(0, 2200);
+    window.scroll(0, 2800);
 }
 
 function sobreRedirectEr(event) {
     event.preventDefault();
-    window.scroll(0, 3300);
+    window.scroll(0, 4000);
 }
 
 function noticiasRedirectEr(event) {
+    event.preventDefault();
+    window.scroll(0, 3500);
+}
+
+//Hidrelétrica
+
+function contatoRedirectHidro(event) {
+    event.preventDefault();
+    window.scroll(0, 6000);
+}
+
+function topicoRedirectHidro(event) {
+    event.preventDefault();
+    window.scroll(0, 2100);
+}
+
+function sobreRedirectHidro(event) {
+    event.preventDefault();
+    window.scroll(0, 3300);
+}
+
+function noticiasRedirectHidro(event) {
     event.preventDefault();
     window.scroll(0, 2800);
 }

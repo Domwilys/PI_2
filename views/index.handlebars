@@ -15,13 +15,13 @@
              <a href="/" class="nav__link">Início</a>
         </li>
         <li class="nav__item">
-            <a href="/" onclick="topicoRedirect(event)" class="nav__link">Tópicos</a>
+            <a href="/" onclick="topicoRedirectIndex(event)" class="nav__link">Tópicos</a>
         </li>
         <li class="nav__item">
-            <a href="/" onclick="sobreRedirect(event)" class="nav__link">Sobre</a>
+            <a href="/" onclick="sobreRedirectIndex(event)" class="nav__link">Sobre</a>
         </li>
         <li class="nav__item">
-            <a href="/" onclick="contatoRedirect(event)" id="contato" class="nav__link">Contato</a>
+            <a href="/" onclick="contatoRedirectIndex(event)" id="contato" class="nav__link">Contato</a>
         </li>
         <li class="nav__item">
             <button class="nav__botao">
@@ -137,10 +137,10 @@
     </div>
     <a href="https://www.google.com/search?q=Energia+no+Brasil&sxsrf=ALiCzsYsysPPWpCCMJ48h8_ZdPEvjBs5Pg:1667429085172&source=lnms&tbm=nws&sa=X&ved=2ahUKEwjr9LyyyZD7AhUeO7kGHVkXCYQQ_AUoAXoECAIQAw&biw=1366&bih=587&dpr=1" target="_blank" class="noticias__link"><span class="reveal">Ir para Notícias</span> <span>></span></a>
 </div>
-<div class="sobre">
+<div class="sobre reveal">
     <div class="sobre__texto">
-        <h2 class="sobre__titulo reveal">Sobre Nós</h2>
-        <p class="sobre__paragrafo reveal">
+        <h2 class="sobre__titulo">Sobre Nós</h2>
+        <p class="sobre__paragrafo">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis officia alias
             mollitia rem dolores? Voluptatem recusandae totam amet voluptatibus iure
             praesentium facere quam maxime dolor. Quidem aspernatur assumenda provident
@@ -150,7 +150,7 @@
     <img
         src="nasa-_SFJhRPzJHs-unsplash.webp"
         alt="Imagem (descricao aqui)"
-        class="sobre__imagem reveal"
+        class="sobre__imagem"
     />
 </div>
 <footer class="rodape reveal">
@@ -176,13 +176,13 @@
     <ul class="rodape__links">
         <h3 class="rodape__subtitulo">Projeto Integrador</h3>
         <li class="rodape__item">
-            <a href="/" onclick="topicoRedirect(event)" class="rodape__link">Tópicos</a>
+            <a href="/" onclick="topicoRedirectIndex(event)" class="rodape__link">Tópicos</a>
         </li>
         <li class="rodape__item">
-            <a href="/" onclick="noticiasRedirect(event)" class="rodape__link">Notícias</a>
+            <a href="/" onclick="noticiasRedirectIndex(event)" class="rodape__link">Notícias</a>
         </li>
         <li class="rodape__item">
-            <a href="/" onclick="sobreRedirect(event)" class="rodape__link">Sobre nós</a>
+            <a href="/" onclick="sobreRedirectIndex(event)" class="rodape__link">Sobre nós</a>
         </li>
     </ul>
 </footer>

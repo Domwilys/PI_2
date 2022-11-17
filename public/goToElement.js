@@ -1,19 +1,43 @@
-function contatoRedirect(event) {
+//Página principal
+
+function contatoRedirectIndex(event) {
     event.preventDefault();
-    window.scroll(0, 3000);
+    window.scroll(0, 6000);
 }
 
-function topicoRedirect(event) {
+function topicoRedirectIndex(event) {
     event.preventDefault();
-    window.scroll(0, 500);
+    window.scroll(0, 2300);
 }
 
-function sobreRedirect(event) {
+function sobreRedirectIndex(event) {
     event.preventDefault();
-    window.scroll(0, 1700);
+    window.scroll(0, 3400);
 }
 
-function noticiasRedirect(event) {
+function noticiasRedirectIndex(event) {
     event.preventDefault();
-    window.scroll(0, 1100);
+    window.scroll(0, 2800);
+}
+
+//Energias renováveis
+
+function contatoRedirectEr(event) {
+    event.preventDefault();
+    window.scroll(0, 6000);
+}
+
+function topicoRedirectEr(event) {
+    event.preventDefault();
+    window.scroll(0, 2200);
+}
+
+function sobreRedirectEr(event) {
+    event.preventDefault();
+    window.scroll(0, 3300);
+}
+
+function noticiasRedirectEr(event) {
+    event.preventDefault();
+    window.scroll(0, 2800);
 }

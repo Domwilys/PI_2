@@ -15,13 +15,13 @@
              <a href="/" class="nav__link">Início</a>
         </li>
         <li class="nav__item">
-            <a href="/" onclick="topicoRedirect(event)" class="nav__link">Tópicos</a>
+            <a href="/energias_renovaveis" onclick="topicoRedirectEr(event)" class="nav__link">Tópicos</a>
         </li>
         <li class="nav__item">
-            <a href="/" onclick="sobreRedirect(event)" class="nav__link">Sobre</a>
+            <a href="/energias_renovaveis" onclick="sobreRedirectEr(event)" class="nav__link">Sobre</a>
         </li>
         <li class="nav__item">
-            <a href="/" onclick="contatoRedirect(event)" id="contato" class="nav__link">Contato</a>
+            <a href="/energias_renovaveis" onclick="contatoRedirectEr(event)" id="contato" class="nav__link">Contato</a>
         </li>
         <li class="nav__item">
             <button class="nav__botao">
@@ -52,13 +52,107 @@
         Um futuro melhor para o Brasil, e para o mundo
     </h2>
 </div>
-<div class="conteudo">
+<div class="conteudo reveal">
     <div class="intro">
         <h2 id="intro_titulo">O futuro das matrizes energéticas</h2>
-        <p id="intro_txt">Segundo um documento lançado em 2020 pelo Ministério de Minas e Energia (MME), apontamentos indicam que em um cenário em 2029 onde as hidrelétricas, que correspondem hoje em dia a cerca de 62% da capacidade, passarão a corresponder cerca de 42%. A fotovoltaica saltará de cerca de 2% para 8%, enquanto a eólica avança de 9% para 16%.</p>
+        <p id="intro_txt">Segundo um documento lançado em 2020 pelo Ministério de Minas e Energia (MME), apontamentos indicam que em um cenário em 2029 onde as hidrelétricas, que correspondem hoje em dia a cerca de 62% da capacidade, passarão a corresponder cerca de 42%. A fotovoltaica saltará de cerca de 2% para 8%, enquanto a eólica avança de 9% para 16%. Essas fontes renováveis trazem muitos benefícios tanto para o meio ambiente quanto para economia, porém é importante entender como é gerada a energia a partir dessas fontes.</p>
+
+        <div class="solar">
+            <h2 id="solar_titulo">Geração de energia solar</h2>
+            <p id="solar_txt">O processo de geração de energia solar, também chamado de efeito fotovoltaico, utiliza das placas solares produzidas em material semicondutor, para quando as partículas de luz solar incidir, os elétrons do material semicondutor entrarem em movimento, gerando eletricidade. A energia solar depois de gerada pelas placas, é levada ao inversor solar, que transforma a corrente elétrica em corrente alternada, e então pronta para o consumo. O Brasil possui um potencial gigantesco para a produção dessa energia. O mapa abaixo mostra as regiões no Brasil com maior vantagem na produção de energia solar.</p>
+            <img id="solar_map" src="Potencial-da-Energia-Fotovoltaica-no-Brasil_compressed.webp">
+            <p id="solar_txt2">A utilização da energia solar nos domicílios, pode gerar de 50% a 90% de economia na conta de luz. O investimento na instalação de placas solares gera lucro à longo prazo devido às economias nas contas de luz.</p>
+        </div>
+
+        <div class="eolica">
+            <h2 id="eolica_titulo">Geração de energia eólica</h2>
+            <p id="eolica_txt">A energia eólica é proveniente da força dos ventos. Para sua geração, além dos ventos, é necessário um aerogerador, também conhecido como turbina eólica. Os ventos movimentam a hélice, fazendo girar o rotor dentro da nacele. Através do multiplicador, a energia mecânica que chega no gerador é convertida em energia elétrica. E a energia é transportada pelos cabos de força o topo da torre para a rede de média tensão no solo, onde por esta rede a energia chega nas subestações coletoras , que leva a sua tensão para poder percorrer grandes distâncias pelas linhas de transmissão até as cidades.</p>
+            <p id="eolica_txt">Em questões econômicas, o ano de 2019 encerrou com R$13 bilhões investidos no setor eólico, representando 53% dos investimentos realizados em renováveis no Brasil, principalmente nas regiões Nordeste e Sul do país. O quadro abaixo mostra a evolução dos investimentos no setor eólico a partir do ano de 2011 até 2019 (em milhões):</p>
+            <img id="eolica_tabela" src="TabelaGastos_compressed.webp">
+            <p id="eolica_txt">Assim, a realização dos investimentos para a expansão do setor eólico brasileiro implicou em ganho na economia nas regiões Nordeste e Sul na ordem de 66,95 bilhões de reais.</p>
+        </div>
     </div>
 </div>
-{{!-- <footer class="rodape reveal">
+
+<div class="topicos reveal">
+    <div class="topicos__texto">
+        <h2 class="topicos__titulo">Tópicos</h2>
+        <p class="topicos__paragrafo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ex. Dolor sit amet consectetur adipisicing elit.
+        </p>
+    </div>
+    <div class="topicos__grade">
+        <div class="topico topico--span-dois">
+            <a href="/energias_renovaveis"><h3 class="topico__titulo">Energias Renováveis</h3></a>
+        </div>
+        <div class="topico">
+            <a href="/gas_natural"><h3 class="topico__titulo">Gás Natural</h3></a>
+        </div>
+        <div class="topico">
+            <a href="/hidreletricas"><h3 class="topico__titulo">Hidrelétrica</h3></a>
+        </div>
+        <div class="topico">
+            <a href="/petroleo"><h3 class="topico__titulo">Petróleo</h3></a>
+        </div>
+        <div class="topico">
+            <a href="/termeletrica"><h3 class="topico__titulo">Termelétrica</h3></a>
+        </div>
+    </div>
+</div>
+
+<div class="noticias reveal">
+    <div class="noticia">
+        <img
+            class="noticia__imagem"
+            src="noticia_1.webp"
+            alt="Imagem de notícia"
+        />
+        <div class="noticia__informacoes">
+            <a href="https://valor.globo.com/brasil/noticia/2022/10/11/epe-aumenta-projecao-de-pico-de-producao-de-petroleo-no-brasil.ghtml" target="_blank"><h3 class="noticia__titulo">EPE aumenta projeção de pico de produção de petróleo no Brasil</h3></a>
+            <p class="noticia__data">Data: 11 de out. de 2022</p>
+        </div>
+    </div>
+    <div class="noticia_2">
+        <img
+            class="noticia__imagem"
+            src="noticia_2.webp"
+            alt="Imagem de notícia"
+        />
+        <div class="noticia__informacoes">
+            <a href="https://g1.globo.com/ce/ceara/especial-publicitario/unifor/guia-de-profissoes/noticia/2022/11/01/o-futuro-da-energia-renovavel-ja-chegou.ghtml" target="_blank"><h3 class="noticia__titulo">O futuro da energia renovável já chegou</h3></a>
+            <p class="noticia__data">Data: 01 de nov. de 2022</p>
+        </div>
+    </div>
+    <div class="noticia_3">
+        <img
+            class="noticia__imagem"
+            src="noticia_3.webp"
+            alt="Imagem de notícia"
+        />
+        <div class="noticia__informacoes">
+            <a href="https://g1.globo.com/mg/especial-publicitario/grupo-frg-midias-eventos/noticia/2022/11/01/congresso-de-geracao-distribuida-deve-movimentar-setor-de-energia-solar-no-brasil.ghtml" target="_blank"><h3 class="noticia__titulo">Congresso de Geração Distribuída deve movimentar setor de energia solar no Brasil</h3></a>
+            <p class="noticia__data">Data: 01 de nov. de 2022</p>
+        </div>
+    </div>
+    <a href="https://www.google.com/search?q=Energia+no+Brasil&sxsrf=ALiCzsYsysPPWpCCMJ48h8_ZdPEvjBs5Pg:1667429085172&source=lnms&tbm=nws&sa=X&ved=2ahUKEwjr9LyyyZD7AhUeO7kGHVkXCYQQ_AUoAXoECAIQAw&biw=1366&bih=587&dpr=1" target="_blank" class="noticias__link"><span class="reveal">Ir para Notícias</span> <span>></span></a>
+</div>
+<div class="sobre reveal">
+    <div class="sobre__texto">
+        <h2 class="sobre__titulo">Sobre Nós</h2>
+        <p class="sobre__paragrafo">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis officia alias
+            mollitia rem dolores? Voluptatem recusandae totam amet voluptatibus iure
+            praesentium facere quam maxime dolor. Quidem aspernatur assumenda provident
+            excepturi.
+        </p>
+    </div>
+    <img
+        src="nasa-_SFJhRPzJHs-unsplash.webp"
+        alt="Imagem (descricao aqui)"
+        class="sobre__imagem"
+    />
+</div>
+<footer class="rodape reveal">
     <ul class="rodape__coluna">
 
         <form id="formulario" name="sugest_form" action="/" method="post">
@@ -81,16 +175,16 @@
     <ul class="rodape__links">
         <h3 class="rodape__subtitulo">Projeto Integrador</h3>
         <li class="rodape__item">
-            <a href="/" onclick="topicoRedirect(event)" class="rodape__link">Tópicos</a>
+            <a href="/energias_renovaveis" onclick="topicoRedirectEr(event)" class="rodape__link">Tópicos</a>
         </li>
         <li class="rodape__item">
-            <a href="/" onclick="noticiasRedirect(event)" class="rodape__link">Notícias</a>
+            <a href="/energias_renovaveis" onclick="noticiasRedirectEr(event)" class="rodape__link">Notícias</a>
         </li>
         <li class="rodape__item">
-            <a href="/" onclick="sobreRedirect(event)" class="rodape__link">Sobre nós</a>
+            <a href="/energias_renovaveis" onclick="sobreRedirectEr(event)" class="rodape__link">Sobre nós</a>
         </li>
     </ul>
-</footer> --}}
+</footer>
 <script src="reveal.js"></script>
 <script src="script.js"></script>
 <script src="search.js"></script>

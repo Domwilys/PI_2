@@ -203,7 +203,266 @@ body, html {
 	margin-left: 95px;
 }
 
-/* .rodape {
+.solar {
+    margin-top: 50px;
+}
+
+#solar_titulo {
+	font-size: 2rem;
+	margin-left: 95px;
+}
+
+#solar_txt {
+	text-align: justify;
+	max-width: 118ch;
+	font-weight: 200;
+	line-height: 1.8rem;
+	margin-top: 30px;
+	margin-left: 95px;
+}
+
+#solar_map {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 50px;
+    margin-left: 95px;
+}
+
+#solar_txt2 {
+    text-align: justify;
+	max-width: 118ch;
+	font-weight: 200;
+	line-height: 1.8rem;
+	margin-top: 30px;
+	margin-left: 95px;
+}
+
+.eolica {
+    margin-top: 50px;
+}
+
+#eolica_titulo {
+	font-size: 2rem;
+	margin-left: 95px;
+}
+
+#eolica_txt {
+	text-align: justify;
+	max-width: 118ch;
+	font-weight: 200;
+	line-height: 1.8rem;
+	margin-top: 30px;
+	margin-left: 95px;
+}
+
+#eolica_txt {
+	text-align: justify;
+	max-width: 118ch;
+	font-weight: 200;
+	line-height: 1.8rem;
+	margin-top: 30px;
+	margin-left: 95px;
+}
+
+#eolica_tabela {
+    width: 100%;
+    max-width: 700px;
+    margin-left: 350px;
+    margin-top: 50px;
+}
+
+.topicos {
+	display: flex;
+	justify-content: space-between;
+	align-items:baseline;
+	padding-block: 4rem;
+	padding-inline: 7rem;
+	background-color: rgb(5, 5, 5);
+	color: white;
+}
+
+.topicos__titulo {
+	font-size: 2.3rem;
+}
+
+.topicos__paragrafo {
+	max-width: 40ch;
+	font-weight: 200;
+	line-height: 1.8rem;
+	margin-top: 30px;
+}
+
+.topicos__grade {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
+	max-width: 700px;
+	height: 100%;
+}
+
+.topico {
+	height: 100%;
+	padding: 2rem;
+	padding-bottom: 10rem;
+	background-size: cover;
+	cursor: pointer;
+	box-shadow: inset 100vw 100vh rgba(0, 0, 0, 0.2);
+	transition: all .2s ease-in-out;
+	color: #fff;
+}
+
+.topico--span-dois {
+	grid-column: span 2;
+}
+
+.topico:nth-child(1) {
+	background-image: url('american-public-power-association-eIBTh5DXW9w-unsplash.webp');
+}
+
+.topico:nth-child(2) {
+	background-image: url('fre-sonneveld-q6n8nIrDQHE-unsplash.webp');
+}
+
+.topico:nth-child(3) {
+	background-image: url('tejj-o8iXJVAahUc-unsplash.webp');
+}
+
+.topico:nth-child(4) {
+	background-image: url('maria-lupan-hy97yy3e03A-unsplash.webp');
+}
+
+.topico:nth-child(5) {
+	background-image: url('valeriy-kryukov-zc9__sCp1sc-unsplash.webp');
+}
+
+.topico:hover {
+	z-index: 100;
+	transform: scale(1.1);
+}
+
+.topico__titulo {
+	max-width: 5ch;
+	line-height: 1.8rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.noticias {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, auto);
+	align-items: center;
+	padding-top: 4rem;
+	padding-bottom: 2rem;
+	padding-inline: 7rem;
+	height: 100vh;
+	background-color:rgb(255, 234, 199);
+}
+
+.noticias__link {
+	margin-top: 2rem;
+	grid-column: span 3;
+	place-self: center;
+	font-weight: 200;
+	color: white;
+	background-color: rgb(35, 35, 35);
+	padding-block: 0.25rem;
+	padding-inline: 0.5rem;
+}
+
+.noticias__link span:first-child:hover {
+	text-decoration: underline 1px;
+}
+
+.noticias__link span:last-child {
+	font-weight: 500;
+	font-size: 1.2rem;
+	vertical-align: middle;
+}
+
+.noticia {
+	margin-inline: 2rem;
+	display: flex;
+	flex-direction: column;
+	margin-top: -10px;
+}
+
+.noticia img {
+	height: 200px;
+}
+
+.noticia__imagem {
+	max-width: 100%;
+}
+
+.noticia__informacoes span {
+	background-color: white;
+}
+
+.noticia__titulo, .noticia__data {
+	padding-inline: 1rem;
+}
+
+.noticia__titulo {
+	padding-block: 0.5rem;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	font-weight: 600;
+}
+
+.noticia__data {
+	font-weight: 300;
+}
+
+.noticia_2 {
+	margin-inline: 2rem;
+	display: flex;
+	flex-direction: column;
+	margin-top: -40px; 
+}
+
+.noticia_2 img {
+	height: 200px;
+}
+
+.noticia_3 {
+	margin-inline: 2rem;
+	display: flex;
+	flex-direction: column;
+	margin-top: 25px; 
+}
+
+.noticia_3 img {
+	height: 200px;
+}
+
+.sobre {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding-block: 4rem;
+	padding-inline: 7rem;
+	color: white;
+	background-color: rgb(5, 5, 5);
+	padding-bottom: 8rem; /* ESTILO TEMPORARIO */
+}
+
+.sobre__titulo {
+	margin-bottom: 1.25rem;
+	font-size: 2.3rem;
+}
+
+.sobre__paragrafo {
+	max-width: 60ch;
+	font-weight: 200;
+	line-height: 1.8rem;
+}
+
+.sobre__imagem {
+	max-width: 100%;
+}
+
+.rodape {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	padding-block: 4rem;
@@ -261,4 +520,4 @@ body, html {
 
 .rodape__link:hover {
 	text-decoration: 1px underline;
-} */
+}

@@ -9,7 +9,7 @@
 </head>
 
 <nav class="nav">
-    <a href="/"><img src="logo_nav_branco.webp" id="logo_site"></a>
+    <a href="/"><img style="margin-top: -20px;" src="logo_nav_branco.webp" id="logo_site"></a>
     <ul class="nav__itens">
         <li class="nav__item">
              <a href="/" class="nav__link">Início</a>
@@ -49,36 +49,60 @@
 <div class="hero">
     <h1 class="hero__titulo">Matrizes Energéticas Brasileiras</h1>
     <h2 class="hero__subtitulo">
-        Um subtitulo que fale sobre o que o site é e qual serviço ele dá ao usuário, slogan.
+        Produção, demanda, custo e consumo
     </h2>
 </div>
-<div class="topicos">
+<div class="conteudo reveal">
+    <div class="intro">
+        <h2 id="intro_titulo">
+            O que são matrizes energéticas?
+        </h2>
+        <p id="intro_txt">
+            Uma matriz energética é toda a energia disponibilizada para ser transformada, distribuída e consumida nos processos produtivos. É a quantidade de recursos energéticos oferecidos por um país ou por uma região. O estudo das matrizes energéticas se mostra cada vez mais importante para a melhoria econômica e social do Brasil no futuro. Porém, as matrizes energéticas não existiriam se não fossem as fontes de energia. Fontes de energia são recursos naturais ou artificiais usados na produção de energia, utilizada para veículos, geração de calor, eletrodomésticos, e outros diversos fins. São separadas em fontes de <b>energia renováveis</b> e <b>não-renováveis</b>.  
+        </p>
+        <p id="intro_txt2">As <b>fontes renováveis</b>, como o próprio nome diz, podem ser repostas e reutilizadas naturalmente, porém isso não significa que elas são inesgotáveis. Alguns exemplos são as energias vindas de ventiladores eólicos, que utilizam a força dos ventos para a produção de energia; as hidrelétricas, que gera energia através de fluxos de água, e é a mais utilizada no Brasil; a famosa energia solar, que obtém energia do sol através de placas com células fotovoltaicas.</p>
+        <p id="intro_txt3">E temos as <b>fontes não-renováveis</b>, que são as que quando as reservas esgotam, não podem ser regeneradas no nosso tempo de vida, e também são as mais poluentes. Entre elas, podemos principalmente destacar os combustíveis fósseis. Eles são obtidos através de processos naturais, como a decomposição de organismos soterrados, e possuem uma alta quantidade de carbono que é usado para alimentar a combustão, como por exemplo o petróleo, o gás natural, o carvão mineral, entre outros.</p>
+        <img id="rn_grafico" src="Infográfico-energias-renováveis-e-não-renováveis_compressed.webp">
+        
+        <h2 id="producao_titulo">Produção e consumo de energia no Brasil</h2>
+        <p id="producao_txt">A demanda energética de um país está fortemente relacionada à sua capacidade econômica, ou seja, quanto mais robusta for sua economia, maior será a necessidade de produção de energia. Isso ocorre por alguns fatores como: o aumento da população, ascensão econômica de pessoas de classes baixas, aumento da produção industrial, temperatura e umidade, a “eletrificação” de diversos fatores do dia-a-dia. O Brasil é exemplo da evolução das fontes energéticas. Em 1970, duas fontes de energia correspondiam a 78% do consumo, sendo elas petróleo e lenha. Em 2000 eram três fontes de energia, que correspondiam a 74% do consumo, sendo elas o petróleo, a lenha e a hidráulica. Previsões apontam que para 2030, necessitamos de mais fontes energéticas além do petróleo, da hidráulica, da cana de açúcar e do gás natural.</p>
+        <div class="producao_txt2">
+            <h3 id="producao_titulo2">Produção</h3>
+            <p id="producao_txt2_cont">Sobre a produção energética no Brasil, tem um bom desempenho no que chamamos de energia “limpa”, que pouco agridem o meio ambiente, e que também são muito importantes hoje em dia devido aos fortes apelos à sustentabilidade.</p>
+        </div>
+        <div class="producao_txt3">
+            <h3 id="producao_titulo3">Consumo</h3>
+            <p id="producao_txt3_cont">O consumo de energia elétrica no Brasil somou 474.231 GWh em 2020. O volume corresponde a uma queda de 1,6% na comparação com o consumo de energia em 2019, ou também, cerca de 1224 toneladas equivalentes de petróleo por habitante.</p>
+        </div>
+    </div>
+</div>
+<div class="topicos reveal">
     <div class="topicos__texto">
-        <h2 class="topicos__titulo reveal">Tópicos</h2>
-        <p class="topicos__paragrafo reveal">
+        <h2 class="topicos__titulo">Tópicos</h2>
+        <p class="topicos__paragrafo">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ex. Dolor sit amet consectetur adipisicing elit.
         </p>
     </div>
     <div class="topicos__grade">
-        <div class="topico topico--span-dois reveal">
-            <a href="/energias_renovaveis"><h3 class="topico__titulo reveal">Energias Renováveis</h3></a>
+        <div class="topico topico--span-dois">
+            <a href="/energias_renovaveis"><h3 class="topico__titulo">Energias Renováveis</h3></a>
         </div>
-        <div class="topico reveal">
-            <a href="/gas_natural"><h3 class="topico__titulo reveal">Gás Natural</h3></a>
+        <div class="topico">
+            <a href="/gas_natural"><h3 class="topico__titulo">Gás Natural</h3></a>
         </div>
-        <div class="topico reveal">
-            <a href="/hidreletricas"><h3 class="topico__titulo reveal">Hidrelétrica</h3></a>
+        <div class="topico">
+            <a href="/hidreletricas"><h3 class="topico__titulo">Hidrelétrica</h3></a>
         </div>
-        <div class="topico reveal">
-            <a href="/petroleo"><h3 class="topico__titulo reveal">Petróleo</h3></a>
+        <div class="topico">
+            <a href="/petroleo"><h3 class="topico__titulo">Petróleo</h3></a>
         </div>
-        <div class="topico reveal">
-            <a href="/termeletrica"><h3 class="topico__titulo reveal">Termelétrica</h3></a>
+        <div class="topico">
+            <a href="/termeletrica"><h3 class="topico__titulo">Termelétrica</h3></a>
         </div>
     </div>
 </div>
 <div class="noticias reveal">
-    <div class="noticia reveal">
+    <div class="noticia">
         <img
             class="noticia__imagem"
             src="noticia_1.webp"
@@ -89,7 +113,7 @@
             <p class="noticia__data">Data: 11 de out. de 2022</p>
         </div>
     </div>
-    <div class="noticia_2 reveal">
+    <div class="noticia_2">
         <img
             class="noticia__imagem"
             src="noticia_2.webp"
@@ -100,7 +124,7 @@
             <p class="noticia__data">Data: 01 de nov. de 2022</p>
         </div>
     </div>
-    <div class="noticia_3 reveal">
+    <div class="noticia_3">
         <img
             class="noticia__imagem"
             src="noticia_3.webp"

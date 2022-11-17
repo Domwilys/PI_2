@@ -136,7 +136,7 @@ body, html {
 }
 
 .nav__barra-pesquisa {
-	width: 30rem;
+	width: 40rem;
 	border-bottom: 2px solid;
 	padding-inline: 2rem;
 	font-size: 1.3rem;
@@ -149,6 +149,8 @@ body, html {
 	border-radius: 10px;
 	margin-top: 10px;
 	padding: 20px;
+	width: 100%;
+	max-width: 640px;
 }
 
 #list li {
@@ -178,8 +180,98 @@ body, html {
 
 .hero__subtitulo {
 	padding-top: 1.25rem;
-	font-size: 1.15rem;
+	font-size: 1.3rem;
 	font-weight: 200;
+}
+
+.conteudo {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#intro_titulo {
+	font-size: 2rem;
+	margin-left: 95px;
+}
+
+#intro_txt {
+	text-align: justify;
+	max-width: 118ch;
+	font-weight: 200;
+	line-height: 1.8rem;
+	margin-top: 30px;
+	margin-left: 95px;
+}
+
+#intro_txt2 {
+	text-align: justify;
+	max-width: 50ch;
+	font-weight: 200;
+	line-height: 1.8rem;
+	margin-top: 30px;
+	margin-left: 95px;
+}
+
+#intro_txt3 {
+	text-align: justify;
+	max-width: 50ch;
+	font-weight: 200;
+	line-height: 1.8rem;
+	margin-top: -235px;
+	margin-left: 750px;
+}
+
+#rn_grafico {
+	width: 100%;
+	max-width: 800px;
+	margin-top: 30px;
+	margin-left: 250px;
+}
+
+#producao_titulo {
+	font-size: 2rem;
+	margin-left: 95px;
+	margin-top: 80px;
+}
+
+#producao_txt {
+	text-align: justify;
+	max-width: 118ch;
+	font-weight: 200;
+	line-height: 1.8rem;
+	margin-top: 30px;
+	margin-left: 95px;
+}
+
+#producao_titulo2 {
+	font-size: 1.8rem;
+	margin-left: 95px;
+	margin-top: 80px;
+}
+
+#producao_txt2_cont {
+	text-align: justify;
+	max-width: 50ch;
+	font-weight: 200;
+	line-height: 1.8rem;
+	margin-top: 30px;
+	margin-left: 95px;
+}
+
+#producao_titulo3 {
+	font-size: 1.8rem;
+	margin-right: 470px;
+	margin-top: -70px;
+	float: right;
+}
+
+#producao_txt3_cont {
+	text-align: justify;
+	max-width: 50ch;
+	font-weight: 200;
+	line-height: 1.8rem;
+	margin-top: -150px;
+	margin-left: 750px;
 }
 
 .topicos {

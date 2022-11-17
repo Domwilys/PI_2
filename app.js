@@ -65,6 +65,20 @@ app.get('/petroleo', function(req, res){
     res.render('petroleo');
 });
 
+app.post("/petroleo", function(req, res){
+    if(req.body.nome != null && req.body.email != null && req.body.sugest_usr != null){
+        Sugest.create({
+            nome: req.body.nome,
+            email: req.body.email,
+            sugestao: req.body.sugest_usr
+        }).then(function(){
+            console.log("Dados do usuário recebidos com sucesso!");
+        }).catch(function(erro){
+            console.log("Erro ao receber dados do usuário! Erro:" + erro);
+        });
+    }
+});
+
 app.get('/energias_renovaveis', function(req, res){
     res.render('energias_renovaveis');
 });
@@ -104,6 +118,20 @@ app.post("/hidreletricas", function(req, res){
 app.get('/termeletrica', function(req, res){
     res.render('termeletrica');
 })
+
+app.post("/termeletrica", function(req, res){
+    if(req.body.nome != null && req.body.email != null && req.body.sugest_usr != null){
+        Sugest.create({
+            nome: req.body.nome,
+            email: req.body.email,
+            sugestao: req.body.sugest_usr
+        }).then(function(){
+            console.log("Dados do usuário recebidos com sucesso!");
+        }).catch(function(erro){
+            console.log("Erro ao receber dados do usuário! Erro:" + erro);
+        });
+    }
+});
 
 app.get('/gas_natural', function(req, res){
     res.render('gas_natural');

@@ -1,1 +1,185 @@
-<p>Petróleo</p>
+<head>
+    <meta charset="UTF-8">
+    <title>Egni | Petróleo</title>
+    <link rel="stylesheet" href="petroleo.css">
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+</head>
+
+<nav class="nav">
+    <a href="/"><img style="margin-top: -20px;" src="logo_nav_branco.webp" id="logo_site"></a>
+    <ul class="nav__itens">
+        <li class="nav__item">
+             <a href="/" class="nav__link">Início</a>
+        </li>
+        <li class="nav__item">
+            <a href="/" onclick="topicoRedirectIndex(event)" class="nav__link">Tópicos</a>
+        </li>
+        <li class="nav__item">
+            <a href="/" onclick="sobreRedirectIndex(event)" class="nav__link">Sobre</a>
+        </li>
+        <li class="nav__item">
+            <a href="/" onclick="contatoRedirectIndex(event)" id="contato" class="nav__link">Contato</a>
+        </li>
+        <li class="nav__item">
+            <button class="nav__botao">
+                <span class="material-symbols-outlined">search</span>
+            </button>
+        </li>
+    </ul>
+    <div class="nav__pesquisa">
+        <form class="pesquisa">
+            <input type="text" class="nav__barra-pesquisa" id="searchbar" onkeyup="search_topic()"/>
+                
+            <ol id='list'>
+                <a href="/petroleo"><li class="topic">Petróleo</li></a>
+                <a href="/energias_renovaveis"><li class="topic">Energias Renováveis</li></a>
+                <a href="/hidreletricas"><li class="topic">Hidrelétrica</li></a>
+                <a href="/termeletrica"><li class="topic">Termelétrica</li></a>
+                <a href="/gas_natural"><li class="topic">Gás Natural</li></a>
+                <a href="https://valor.globo.com/brasil/noticia/2022/10/11/epe-aumenta-projecao-de-pico-de-producao-de-petroleo-no-brasil.ghtml" target="_blank"><li class="topic">EPE aumenta projeção de pico de produção de petróleo no Brasil</li></a>
+                <a href="https://g1.globo.com/ce/ceara/especial-publicitario/unifor/guia-de-profissoes/noticia/2022/11/01/o-futuro-da-energia-renovavel-ja-chegou.ghtml" target="_blank"><li class="topic">O futuro da energia renovável já chegou</li></a>
+                <a href="https://g1.globo.com/mg/especial-publicitario/grupo-frg-midias-eventos/noticia/2022/11/01/congresso-de-geracao-distribuida-deve-movimentar-setor-de-energia-solar-no-brasil.ghtml" target="_blank"><li class="topic">Congresso de Geração Distribuída deve movimentar setor de energia solar no Brasil</li></a>
+            </ol>
+        </form>
+    </div>
+</nav>
+<div class="hero">
+    <h1 class="hero__titulo">Produção de petróleo</h1>
+    <h2 class="hero__subtitulo">
+        Essencial para a economia do Brasil e do mundo
+    </h2>
+</div>
+<div class="conteudo">
+    <div class="intro">
+        <h2 id="intro_titulo">O recurso natural mais explorado do mundo</h2>
+        <p id="intro_txt">O petróleo é um recurso fóssil natural e não-renovável, composto principalmente por hidrocarbonetos. Esses compostos liberam gases tóxicos, ou que podem causar efeito estufa. Na combustão completa dos hidrocarbonetos, são liberados dióxido de carbono (CO<small>2</small>), e água. Já na combustão incompleta, podem ser liberados monóxidos de carbono (CO), e fuligem (C). O monóxido e o dióxido de carbono são gases do efeito estufa.</p>
+        <h2 id="intro_titulo2">Processo de extração</h2>
+        <p id="intro_txt">A extração do petróleo ocorre em três etapas, sendo a primeira a prospecção, a segunda a perfuração e por fim a própria extração.</p>
+        <p id="intro_txt">Na etapa de prospecção, é realizada a localização das bacias sedimentares, utilizando equipamentos como: magnetômetros, gravímetros e também o auxílio de sismógrafos, que são responsáveis pela avaliação das condições do local.</p>
+        <p id="intro_txt">Depois da etapa de perfuração ocorre que as jazidas de petróleo são descobertas e marcadas com coordenadas GPS e bóias marcadoras, que são posicionadas na água. A perfuração na terra ocorre por meio de sondas de perfuração, porém na água onde o processo é bem mais difícil, são feitas as plataformas.</p>
+        <img id="extracao_img" src="download_compressed.webp">
+        <p id="intro_txt">E por fim na etapa de extração, o petróleo já se encontra acima da água salgada, com uma camada de gás abaixo causando uma alta pressão. Quando o poço é perfurado, essa pressão que faz o petróleo jorrar até a superfície, diminui a necessidade de bombeá-lo. Depois o petróleo é armazenado e está pronto para ser transportado para as refinarias.</p>
+        <h2 id="intro_titulo2">Processo de refinamento</h2>
+        <p id="intro_txt">Existem diversas formas de retirar os derivados do petróleo, porém a mais utilizada é a chamada destilação fracionada. Um fator importante para entender como é feita a destilação fracionada, é que quanto maior for a massa molar de uma substância, maior é seu ponto de ebulição. Essa propriedade é muito importante nessa destilação, pois é assim que eles separam as frações do petróleo.</p>
+        <p id="intro_txt">Por exemplo, a gasolina é uma fração do petróleo formada por hidrocarbonetos menores que o diesel, ou seja, para extrair a gasolina é necessário uma temperatura menor do que para extrair o óleo diesel. Para conseguir aquecer o petróleo e tirar suas frações, ele é direcionado para uma fornalha, onde é aquecido a cerca de 400° Celsius. Veja o gráfico a seguir, onde mostra as frações obtidas em determinadas temperaturas:</p>
+        <img id="fracao_img" src="gráfico-da-destilação-fracionada_compressed.webp">
+    </div>
+</div>
+<div class="topicos reveal">
+    <div class="topicos__texto">
+        <h2 class="topicos__titulo">Tópicos</h2>
+        <p class="topicos__paragrafo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ex. Dolor sit amet consectetur adipisicing elit.
+        </p>
+    </div>
+    <div class="topicos__grade">
+        <div class="topico topico--span-dois">
+            <a href="/energias_renovaveis"><h3 class="topico__titulo">Energias Renováveis</h3></a>
+        </div>
+        <div class="topico">
+            <a href="/gas_natural"><h3 class="topico__titulo">Gás Natural</h3></a>
+        </div>
+        <div class="topico">
+            <a href="/hidreletricas"><h3 class="topico__titulo">Hidrelétrica</h3></a>
+        </div>
+        <div class="topico">
+            <a href="/petroleo"><h3 class="topico__titulo">Petróleo</h3></a>
+        </div>
+        <div class="topico">
+            <a href="/termeletrica"><h3 class="topico__titulo">Termelétrica</h3></a>
+        </div>
+    </div>
+</div>
+<div class="noticias reveal">
+    <div class="noticia">
+        <img
+            class="noticia__imagem"
+            src="noticia_1.webp"
+            alt="Imagem de notícia"
+        />
+        <div class="noticia__informacoes">
+            <a href="https://valor.globo.com/brasil/noticia/2022/10/11/epe-aumenta-projecao-de-pico-de-producao-de-petroleo-no-brasil.ghtml" target="_blank"><h3 class="noticia__titulo">EPE aumenta projeção de pico de produção de petróleo no Brasil</h3></a>
+            <p class="noticia__data">Data: 11 de out. de 2022</p>
+        </div>
+    </div>
+    <div class="noticia_2">
+        <img
+            class="noticia__imagem"
+            src="noticia_2.webp"
+            alt="Imagem de notícia"
+        />
+        <div class="noticia__informacoes">
+            <a href="https://g1.globo.com/ce/ceara/especial-publicitario/unifor/guia-de-profissoes/noticia/2022/11/01/o-futuro-da-energia-renovavel-ja-chegou.ghtml" target="_blank"><h3 class="noticia__titulo">O futuro da energia renovável já chegou</h3></a>
+            <p class="noticia__data">Data: 01 de nov. de 2022</p>
+        </div>
+    </div>
+    <div class="noticia_3">
+        <img
+            class="noticia__imagem"
+            src="noticia_3.webp"
+            alt="Imagem de notícia"
+        />
+        <div class="noticia__informacoes">
+            <a href="https://g1.globo.com/mg/especial-publicitario/grupo-frg-midias-eventos/noticia/2022/11/01/congresso-de-geracao-distribuida-deve-movimentar-setor-de-energia-solar-no-brasil.ghtml" target="_blank"><h3 class="noticia__titulo">Congresso de Geração Distribuída deve movimentar setor de energia solar no Brasil</h3></a>
+            <p class="noticia__data">Data: 01 de nov. de 2022</p>
+        </div>
+    </div>
+    <a href="https://www.google.com/search?q=Energia+no+Brasil&sxsrf=ALiCzsYsysPPWpCCMJ48h8_ZdPEvjBs5Pg:1667429085172&source=lnms&tbm=nws&sa=X&ved=2ahUKEwjr9LyyyZD7AhUeO7kGHVkXCYQQ_AUoAXoECAIQAw&biw=1366&bih=587&dpr=1" target="_blank" class="noticias__link"><span class="reveal">Ir para Notícias</span> <span>></span></a>
+</div>
+<div class="sobre reveal">
+    <div class="sobre__texto">
+        <h2 class="sobre__titulo">Sobre Nós</h2>
+        <p class="sobre__paragrafo">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis officia alias
+            mollitia rem dolores? Voluptatem recusandae totam amet voluptatibus iure
+            praesentium facere quam maxime dolor. Quidem aspernatur assumenda provident
+            excepturi.
+        </p>
+    </div>
+    <img
+        src="nasa-_SFJhRPzJHs-unsplash.webp"
+        alt="Imagem (descricao aqui)"
+        class="sobre__imagem"
+    />
+</div>
+<footer class="rodape reveal">
+    <ul class="rodape__coluna">
+
+        <form id="formulario" name="sugest_form" action="/" method="post">
+            <h3 class="rodape__subtitulo">Quer deixar alguma sugestão?</h3>
+            <li class="rodape__item">
+                <input id="nome_campo" required type="text" placeholder="Nome" name="nome"/>
+            </li>
+            <li class="rodape__item">
+                <input id="email_campo" required type="text" placeholder="E-mail" name="email"/>
+            </li>
+            <li class="rodape__item">
+                <input id="sugestao_campo" required type="text" placeholder="Seu comentário" name="sugest_usr"/>
+            </li>
+            <li class="rodape__item">
+                <button type="submit" class="rodape__botao">Enviar</button>
+            </li>
+        </form>
+    </ul>
+    <p class="rodape__copyright">Projeto Integrador © Copyright 2022</p>
+    <ul class="rodape__links">
+        <h3 class="rodape__subtitulo">Projeto Integrador</h3>
+        <li class="rodape__item">
+            <a href="/" onclick="topicoRedirectIndex(event)" class="rodape__link">Tópicos</a>
+        </li>
+        <li class="rodape__item">
+            <a href="/" onclick="noticiasRedirectIndex(event)" class="rodape__link">Notícias</a>
+        </li>
+        <li class="rodape__item">
+            <a href="/" onclick="sobreRedirectIndex(event)" class="rodape__link">Sobre nós</a>
+        </li>
+    </ul>
+</footer>
+<script src="reveal.js"></script>
+<script src="script.js"></script>
+<script src="search.js"></script>
+<script src="sendform.js"></script>
+<script src="goToElement.js"></script>

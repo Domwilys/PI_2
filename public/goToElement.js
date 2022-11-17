@@ -85,3 +85,28 @@ function noticiasRedirectGas(event) {
     event.preventDefault();
     window.scroll(0, 2200);
 }
+
+//Termelétricas
+
+function contatoRedirectTerm(event) {
+    event.preventDefault();
+    window.scroll(0, 6000);
+}
+
+function topicoRedirectTerm(event) {
+    event.preventDefault();
+    window.scroll(0, 1600);
+}
+
+function sobreRedirectTerm(event) {
+    event.preventDefault();
+    window.scroll(0, 2700);
+}
+
+function noticiasRedirectTerm(event) {
+    event.preventDefault();
+    window.scroll(0, 2200);
+}
+
+//Petróleo
+

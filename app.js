@@ -109,6 +109,20 @@ app.get('/gas_natural', function(req, res){
     res.render('gas_natural');
 })
 
+app.post("/gas_natural", function(req, res){
+    if(req.body.nome != null && req.body.email != null && req.body.sugest_usr != null){
+        Sugest.create({
+            nome: req.body.nome,
+            email: req.body.email,
+            sugestao: req.body.sugest_usr
+        }).then(function(){
+            console.log("Dados do usuário recebidos com sucesso!");
+        }).catch(function(erro){
+            console.log("Erro ao receber dados do usuário! Erro:" + erro);
+        });
+    }
+});
+
 //Roda toda a aplicação na rede local usando a porta "8080"
 app.listen("8080", '10.0.17.143', function(){
     console.log("Servidor rodando em http://localhost:8080");

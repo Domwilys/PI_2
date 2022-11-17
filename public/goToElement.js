@@ -63,3 +63,25 @@ function noticiasRedirectHidro(event) {
     event.preventDefault();
     window.scroll(0, 2800);
 }
+
+//Gás natural
+
+function contatoRedirectGas(event) {
+    event.preventDefault();
+    window.scroll(0, 6000);
+}
+
+function topicoRedirectGas(event) {
+    event.preventDefault();
+    window.scroll(0, 1600);
+}
+
+function sobreRedirectGas(event) {
+    event.preventDefault();
+    window.scroll(0, 2700);
+}
+
+function noticiasRedirectGas(event) {
+    event.preventDefault();
+    window.scroll(0, 2200);
+}
